@@ -2,7 +2,7 @@ name: Mark Tasks Overdue
 on:
   schedule:
       - cron:  '* * * * *'
-  workflow_dispatch
+  workflow_dispatch:
 jobs:
   Ubuntu:
     name: Add labels to overdue issues
