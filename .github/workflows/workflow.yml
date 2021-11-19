@@ -1,11 +1,12 @@
 name: Mark Tasks Overdue
-on: [push]
+on:
+  workflow_dispatch
 jobs:
   Ubuntu:
     name: Add labels to overdue issues
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Issue Due Dates Action
-        uses: phenggeler/github-issue-due-dates-action@1.1.0
+        uses: Recidiviz/github-issue-due-dates-action@v2.7
         with:
           GH_TOKEN: "${{ secrets.GH_TOKEN }}"
