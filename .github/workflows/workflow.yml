@@ -1,5 +1,7 @@
 name: Mark Tasks Overdue
 on:
+  schedule:
+      - cron:  '* * * * *'
   workflow_dispatch
 jobs:
   Ubuntu:
